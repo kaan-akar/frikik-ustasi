@@ -1,0 +1,16 @@
+<!-- PROTOTYPE - NOT FOR PRODUCTION · Frikik Ustası app icon, drawn by hand in SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f7a3a"/>
+  <rect y="300" width="512" height="212" fill="#2c9446"/>
+  <rect y="360" width="512" height="60" fill="#35a852"/>
+  <rect x="96" y="120" width="320" height="16" fill="#fff"/>
+  <rect x="96" y="120" width="16" height="190" fill="#fff"/>
+  <rect x="400" y="120" width="16" height="190" fill="#fff"/>
+  <path d="M120 300 Q 210 90 330 200" stroke="#f5c542" stroke-width="14" fill="none" stroke-linecap="round" stroke-dasharray="4 26"/>
+  <circle cx="330" cy="205" r="78" fill="#f8f8f4" stroke="#1a1a1a" stroke-width="8"/>
+  <polygon points="330,170 362,193 350,231 310,231 298,193" fill="#1a1a1a"/>
+  <polygon points="330,128 352,143 330,152 308,143" fill="#1a1a1a"/>
+  <polygon points="398,190 404,226 384,212 386,180" fill="#1a1a1a"/>
+  <polygon points="262,190 256,226 276,212 274,180" fill="#1a1a1a"/>
+  <polygon points="292,268 318,282 300,272" fill="#1a1a1a"/>
+</svg>
