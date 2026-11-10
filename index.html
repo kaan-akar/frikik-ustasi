@@ -61,7 +61,7 @@ function fit() {
   const k = Math.min(innerWidth / W, innerHeight / H);
   const r = k * (devicePixelRatio || 1);
   viewScale = k;
-  canvas.width = Math.round(W * r); canvas.height = Math.round(H * r);
+  canvas.width = Math.max(1, Math.round(W * r)); canvas.height = Math.max(1, Math.round(H * r)); // never 0: a hidden page has no size yet
   canvas.style.width = Math.round(W * k) + 'px'; canvas.style.height = Math.round(H * k) + 'px';
   canvas.style.marginTop = Math.max(0, Math.floor((innerHeight - H * k) / 2)) + 'px';
   ctx.setTransform(r, 0, 0, r, 0, 0); ctx.imageSmoothingEnabled = true;
@@ -297,6 +297,7 @@ function drawStadium() {
   for (let y = 0; y <= GOAL_H; y += 0.3) { lineW([-GOAL_HW, y, 0], [-GOAL_HW, Math.min(y, 2.0), NET_D], nc, 1); lineW([GOAL_HW, y, 0], [GOAL_HW, Math.min(y, 2.0), NET_D], nc, 1); }
 }
 function drawBackground() {
+  if (innerWidth > 0 && canvas.width <= 1) fit(); // the page got its size after loading
   const key = [cam.x, cam.z, cam.F, canvas.width].join(',');
   if (key !== bgKey) {
     bg.width = canvas.width; bg.height = canvas.height;

@@ -2,7 +2,7 @@
 // Question: Kaydırarak falsolu şut atmak 10 level boyunca eğlenceli ve öğrenilebilir mi?
 // Date: 2026-11-10
 // Offline cache so the installed app opens with no connection. Bump VERSION after any change.
-const VERSION = 'frikik-ustasi-v1';
+const VERSION = 'frikik-ustasi-v2';
 const FILES = ['./', './index.html', './config.js', './manifest.webmanifest',
   './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png'];
 self.addEventListener('install', e => {
